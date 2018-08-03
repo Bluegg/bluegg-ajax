@@ -1,0 +1,32 @@
+{
+  "name": "bluegg-ajax",
+  "version": "0.0.1",
+  "description": "Ajax-ify your forms by just adding some data attributes",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "node_modules/.bin/babel --plugins add-module-exports src/index.js > dist/index.js",
+    "prepublish": "npm run build"
+  },
+  "keywords": [
+    "ajax",
+    "form"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Bluegg/bluegg-ajax.git"
+  },
+  "author": "bluegg",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Bluegg/bluegg-ajax/issues"
+  },
+  "homepage": "https://github.com/Bluegg/bluegg-ajax#readme",
+  "dependencies": {
+    "axios": "^0.18.0"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.10.1",
+    "babel-plugin-add-module-exports": "^0.1.2",
+    "babel-preset-es2015": "^6.9.0"
+  }
+}
