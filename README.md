@@ -15,6 +15,8 @@ Add the following data attributes to your form elements:
 <form action="/endpoint.php" method="post" data-ajax data-ajax-callback="myAjaxCallback">
 ```
 
+Whilst submitting, a **data-ajax-submitting** attribute will be added to the relevant form element.
+
 In this example, after the form submits the ajax request, it will attempt to call a function called **myAjaxCallback** (defined in the **data-ajax-callback** attribute), which needs to be defined in your js like this:
 
 ```javascript
