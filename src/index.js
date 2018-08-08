@@ -9,6 +9,9 @@ function initAjaxForm(nodeObj) {
 function handleAjaxFormSubmit(e, nodeObj) {
     e.preventDefault();
 
+    // Add data-submitting attribute to form whilst making call
+    nodeObj.setAttribute('data-ajax-submitting', '');
+
     var action   = nodeObj.getAttribute('action');
     var data     = getFormFieldsData(nodeObj);
     var callback = nodeObj.getAttribute('data-ajax-callback');
@@ -16,6 +19,9 @@ function handleAjaxFormSubmit(e, nodeObj) {
     axios.post(action, data)
         .then(function(response) {
             window[callback](response);
+
+            // Remove data-submitting attribute from form
+            nodeObj.removeAttribute('data-ajax-submitting');
         })
         .catch(function(error) {
             console.log(error);
