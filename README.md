@@ -25,7 +25,7 @@ window.myAjaxCallback = function(response) {
 }
 ```
 
-A response object will be passed to your callback function. This object contains a **data** attribute that will contain whatever json is returned from the page defined in the **action** attribute of the form element.
+A response object will be passed to your callback function. This object contains a **data** property that will contain whatever json is returned from the page defined in the **action** attribute of the form element.
 
 To ajax-ify your forms, just require the module and run it as a function:
 
