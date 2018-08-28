@@ -1,6 +1,6 @@
 {
   "name": "bluegg-ajax",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "Ajax-ify your forms by just adding some data attributes",
   "main": "dist/index.js",
   "scripts": {
